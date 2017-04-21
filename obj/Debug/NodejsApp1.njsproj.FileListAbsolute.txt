@@ -1,0 +1,2 @@
+C:\Users\hse\Source\Repos\blue-button\obj\Debug\NodejsApp1.njsprojResolveAssemblyReference.cache
+C:\Users\hse\Source\Repos\blue-button\bin\Microsoft.NodejsTools.WebRole.dll

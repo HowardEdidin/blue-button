@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03d12cdb-4d9f-4809-899c-44493ff4a71c}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>index.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="bower.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="RELEASENOTES.md" />
+    <Compile Include="Gruntfile.js" />
+    <Compile Include="index.js" />
+    <Content Include="dist\mocha_runner.html" />
+    <Compile Include="dist\blue-button.js" />
+    <Compile Include="dist\mocha_tests.js" />
+    <Content Include="docs\blue-button-js.png" />
+    <Content Include="example\cms_sample.txt" />
+    <Content Include="example\CCD1.json" />
+    <Content Include="example\CCD_1_last_monday.json" />
+    <Content Include="example\cms.json" />
+    <Content Include="example\example3.json" />
+    <Content Include="example\example3_mod.json" />
+    <Content Include="example\C32.xml" />
+    <Content Include="example\CCD_1.xml" />
+    <Content Include="example\CCD_Vitals.xml" />
+    <Compile Include="example\example.js" />
+    <Compile Include="example\example2.js" />
+    <Compile Include="example\example3.js" />
+    <Compile Include="example\example4.js" />
+    <Compile Include="example\example_c32.js" />
+    <Compile Include="example\example_cms.js" />
+    <Compile Include="lib\generator.js" />
+    <Compile Include="lib\logger.js" />
+    <Compile Include="lib\parser.js" />
+    <Compile Include="lib\renderer.js" />
+    <Compile Include="lib\sense.js" />
+    <Content Include="test\README.md" />
+    <Compile Include="lib\parser\router.js" />
+    <Compile Include="lib\parser\c32\ccd.js" />
+    <Compile Include="lib\parser\c32\cleanup.js" />
+    <Compile Include="lib\parser\c32\demographics.js" />
+    <Compile Include="lib\parser\c32\shared.js" />
+    <Compile Include="lib\parser\ccda\ccd.js" />
+    <Compile Include="lib\parser\ccda\cleanup.js" />
+    <Compile Include="lib\parser\ccda\demographics.js" />
+    <Compile Include="lib\parser\ccda\header.js" />
+    <Compile Include="lib\parser\ccda\shared.js" />
+    <Compile Include="lib\parser\cda\ccd.js" />
+    <Compile Include="lib\parser\cda\cleanup.js" />
+    <Compile Include="lib\parser\cda\demographics.js" />
+    <Compile Include="lib\parser\cda\shared.js" />
+    <Compile Include="lib\parser\common\cleanup.js" />
+    <Compile Include="lib\parser\common\shared.js" />
+    <Compile Include="lib\parser\c32\sections\allergies.js" />
+    <Compile Include="lib\parser\c32\sections\encounters.js" />
+    <Compile Include="lib\parser\c32\sections\immunizations.js" />
+    <Compile Include="lib\parser\c32\sections\medications.js" />
+    <Compile Include="lib\parser\c32\sections\problems.js" />
+    <Compile Include="lib\parser\c32\sections\procedures.js" />
+    <Compile Include="lib\parser\c32\sections\results.js" />
+    <Compile Include="lib\parser\c32\sections\vitals.js" />
+    <Compile Include="lib\parser\ccda\sections\allergies.js" />
+    <Compile Include="lib\parser\ccda\sections\encounters.js" />
+    <Compile Include="lib\parser\ccda\sections\functional_status.js" />
+    <Compile Include="lib\parser\ccda\sections\hospital_discharge_instructions.js" />
+    <Compile Include="lib\parser\ccda\sections\hospital_discharge_medications.js" />
+    <Compile Include="lib\parser\ccda\sections\immunizations.js" />
+    <Compile Include="lib\parser\ccda\sections\medications.js" />
+    <Compile Include="lib\parser\ccda\sections\payers.js" />
+    <Compile Include="lib\parser\ccda\sections\plan_of_care.js" />
+    <Compile Include="lib\parser\ccda\sections\problems.js" />
+    <Compile Include="lib\parser\ccda\sections\procedures.js" />
+    <Compile Include="lib\parser\ccda\sections\reason_for_referral.js" />
+    <Compile Include="lib\parser\ccda\sections\results.js" />
+    <Compile Include="lib\parser\ccda\sections\social_history.js" />
+    <Compile Include="lib\parser\ccda\sections\vitals.js" />
+    <Compile Include="lib\parser\cda\sections\encounters.js" />
+    <Compile Include="lib\parser\cda\sections\medications.js" />
+    <Compile Include="lib\parser\cda\sections\payers.js" />
+    <Compile Include="lib\parser\cda\sections\problems.js" />
+    <Compile Include="lib\parser\cda\sections\procedures.js" />
+    <Compile Include="lib\parser\cda\sections\providers.js" />
+    <Compile Include="lib\parser\cda\sections\results.js" />
+    <Compile Include="test\parser-c32\test-parser-c32.js" />
+    <Compile Include="test\parser-ccd\test-parser-ccd.js" />
+    <Compile Include="test\parser-ccda\test-parser-ccda.js" />
+    <Compile Include="test\parser-cms\test-parser-cms.js" />
+    <Compile Include="test\parser-ncpdp\test-parser-ncpdp.js" />
+    <Compile Include="test\sense\test-sense.js" />
+    <Compile Include="test\unit\test-functional.js" />
+    <Compile Include="test\unit\test-newsections.js" />
+    <Compile Include="test\unit\test-nullflavor.js" />
+    <Compile Include="test\unit\test-references.js" />
+    <Compile Include="test\unit\test-telecom.js" />
+    <Content Include="test\fixtures\generated\CCD_1.json" />
+    <Content Include="test\fixtures\generated\SampleCCDDocument.json" />
+    <Content Include="test\fixtures\generated\VA_CCD_Sample_File_Version_12_5_1.json" />
+    <Content Include="test\fixtures\parser-c32\VA_CCD_Sample_File_Version_12_5_1.xml" />
+    <Content Include="test\fixtures\parser-ccd\SampleCCDDocument.xml" />
+    <Content Include="test\fixtures\parser-ccda\CCDA_Functional_Status_v1.xml" />
+    <Content Include="test\fixtures\parser-ccda\CCDA_NullFlavorSample_v1.xml" />
+    <Content Include="test\fixtures\parser-ccda\CCDA_ReferencedValuesSample_v1.xml" />
+    <Content Include="test\fixtures\parser-ccda\CCD_1.xml" />
+    <Content Include="test\fixtures\parser-ccda\CCD_1_newsections.xml" />
+    <Content Include="test\fixtures\parser-ccda\CCD_1_withNF.xml" />
+    <Content Include="test\fixtures\parser-cms\sample.txt" />
+    <Content Include="test\fixtures\parser-ncpdp\newrx.xml" />
+    <Content Include="test\fixtures\sense\cms_sample.txt" />
+    <Content Include="test\fixtures\sense\example.txt" />
+    <Content Include="test\fixtures\sense\format_x.txt" />
+    <Content Include="test\fixtures\sense\VA_My_HealtheVet_Blue_Button_Sample_Version_12.txt" />
+    <Content Include="test\fixtures\sense\VA_My_HealtheVet_Blue_Button_Sample_Version_12_2.txt" />
+    <Content Include="test\fixtures\sense\VA_My_HealtheVet_Blue_Button_Sample_Version_12_2_1.txt" />
+    <Content Include="test\fixtures\sense\VA_My_HealtheVet_Blue_Button_Sample_Version_12_3.txt" />
+    <Content Include="test\fixtures\sense\VA_My_HealtheVet_Blue_Button_Sample_Version_12_4.txt" />
+    <Content Include="test\fixtures\sense\VA_My_HealtheVet_Blue_Button_Sample_Version_12_5.txt" />
+    <Content Include="test\fixtures\sense\VA_My_HealtheVet_Blue_Button_Sample_Version_12_5_1.txt" />
+    <Content Include="test\fixtures\sense\VA_My_HealtheVet_Blue_Button_Sample_Version_12_6.txt" />
+    <Content Include="test\fixtures\sense\bb.json" />
+    <Content Include="test\fixtures\sense\blue-button.json" />
+    <Content Include="test\fixtures\sense\example.json" />
+    <Content Include="test\fixtures\sense\large.json" />
+    <Content Include="test\fixtures\sense\broken.xml" />
+    <Content Include="test\fixtures\sense\c32_sample.xml" />
+    <Content Include="test\fixtures\sense\CCD.example.xml" />
+    <Content Include="test\fixtures\sense\empty.xml" />
+    <Content Include="test\fixtures\sense\empty_no_declaration.xml" />
+    <Content Include="test\fixtures\sense\newrx.xml" />
+    <Content Include="test\fixtures\sense\VA_CCD_Sample_File_Version_12_5_1.xml" />
+    <Content Include="test\fixtures\unit\telecom.xml" />
+    <Content Include="test\fixtures\file-snippets\generated\CCD_1_Encounters.xml" />
+    <Content Include="test\fixtures\file-snippets\generatedJSON\CCD_1_Medications.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dist" />
+    <Folder Include="docs" />
+    <Folder Include="example" />
+    <Folder Include="lib" />
+    <Folder Include="lib\parser" />
+    <Folder Include="lib\parser\c32" />
+    <Folder Include="lib\parser\c32\sections" />
+    <Folder Include="lib\parser\ccda" />
+    <Folder Include="lib\parser\ccda\sections" />
+    <Folder Include="lib\parser\cda" />
+    <Folder Include="lib\parser\cda\sections" />
+    <Folder Include="lib\parser\common" />
+    <Folder Include="test" />
+    <Folder Include="test\fixtures" />
+    <Folder Include="test\fixtures\file-snippets" />
+    <Folder Include="test\fixtures\file-snippets\generated" />
+    <Folder Include="test\fixtures\file-snippets\generatedJSON" />
+    <Folder Include="test\fixtures\generated" />
+    <Folder Include="test\fixtures\parser-c32" />
+    <Folder Include="test\fixtures\parser-ccd" />
+    <Folder Include="test\fixtures\parser-ccda" />
+    <Folder Include="test\fixtures\parser-cms" />
+    <Folder Include="test\fixtures\parser-ncpdp" />
+    <Folder Include="test\fixtures\sense" />
+    <Folder Include="test\fixtures\unit" />
+    <Folder Include="test\parser-c32" />
+    <Folder Include="test\parser-ccd" />
+    <Folder Include="test\parser-ccda" />
+    <Folder Include="test\parser-cms" />
+    <Folder Include="test\parser-ncpdp" />
+    <Folder Include="test\sense" />
+    <Folder Include="test\unit" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
